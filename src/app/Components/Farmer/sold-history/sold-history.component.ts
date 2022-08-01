@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { FarmerserviceService } from 'src/app/farmerservice.service';
+import { FarmerserviceService } from 'src/app/Services/farmerservice.service';
 import { SoldCrop } from 'src/app/Models/Farmer/SoldCrop';
 
 @Component({

@@ -14,6 +14,12 @@ import { SoldHistoryComponent } from './Components/Farmer/sold-history/sold-hist
 import { MarketplaceComponent } from './Components/Farmer/marketplace/marketplace.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CropBidsComponent } from './Components/Farmer/crop-bids/crop-bids.component';
+import { FarmerRegistrationComponent } from './Components/farmer-registration/farmer-registration.component';
+import { BidderRegistrationComponent } from './Components/bidder-registration/bidder-registration.component';
+import { LoginComponent } from './Components/login/login.component';
+import { FarmerComponent } from './Components/login/farmer/farmer.component';
+import { BidderComponent } from './Components/login/bidder/bidder.component';
+import { AdminComponent } from './Components/login/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,13 @@ import { CropBidsComponent } from './Components/Farmer/crop-bids/crop-bids.compo
     SellRequestComponent,
     SoldHistoryComponent,
     MarketplaceComponent,
-    CropBidsComponent
+    CropBidsComponent,
+    FarmerRegistrationComponent,
+    BidderRegistrationComponent,
+    LoginComponent,
+    FarmerComponent,
+    BidderComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

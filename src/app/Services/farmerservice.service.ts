@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import { catchError, Observable, throwError } from 'rxjs';
-import { SoldCrop } from './Models/Farmer/SoldCrop';
-import { CropAuctionDetail } from './Models/Farmer/CropAuctionDetail';
-import { MarketBid } from './Models/Farmer/MarketBid';
+import { SoldCrop } from '../Models/Farmer/SoldCrop';
+import { CropAuctionDetail } from '../Models/Farmer/CropAuctionDetail';
+import { MarketBid } from '../Models/Farmer/MarketBid';
+import { CropDetail } from '../Models/Farmer/CropDetail';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class FarmerserviceService {
 
 
   getSoldCrops(id: Number): Observable <any>{
-    return this.http.get<SoldCrop>(`${this.baseUrl}/${id}`);
+    return this.http.get<SoldCrop>(`${this.baseUrl + "/soldcrops"}/${id}`);
   }
 
   addCropToAuction(newcrop: CropAuctionDetail): Observable<any>{
@@ -40,4 +41,7 @@ export class FarmerserviceService {
     return this.http.get<MarketBid>(this.baseUrl2 + "/previousbids/" + id);
   }
 
+  getAllCrops(croptype: any): Observable <any>{
+    return this.http.get<CropDetail>(this.baseUrl + "/cropdetails/" + croptype);
+  }
 }

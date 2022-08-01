@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { FarmerserviceService } from 'src/app/farmerservice.service';
+import { FarmerserviceService } from 'src/app/Services/farmerservice.service';
 import { MarketBid } from 'src/app/Models/Farmer/MarketBid';
 
 @Component({

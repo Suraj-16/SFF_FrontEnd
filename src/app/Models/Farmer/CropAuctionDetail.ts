@@ -11,5 +11,6 @@ export interface CropAuctionDetail{
     sold_price: Number,
     total_price: Number,
     is_sold: boolean,
-    is_approved: boolean
+    is_approved: boolean,
+    base_price: Number
 }
