@@ -16,10 +16,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CropBidsComponent } from './Components/Farmer/crop-bids/crop-bids.component';
 import { FarmerRegistrationComponent } from './Components/farmer-registration/farmer-registration.component';
 import { BidderRegistrationComponent } from './Components/bidder-registration/bidder-registration.component';
-import { LoginComponent } from './Components/login/login.component';
 import { FarmerComponent } from './Components/login/farmer/farmer.component';
 import { BidderComponent } from './Components/login/bidder/bidder.component';
 import { AdminComponent } from './Components/login/admin/admin.component';
+import { CropapprovalComponent } from './Components/Admin/cropapproval/cropapproval.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +35,10 @@ import { AdminComponent } from './Components/login/admin/admin.component';
     CropBidsComponent,
     FarmerRegistrationComponent,
     BidderRegistrationComponent,
-    LoginComponent,
     FarmerComponent,
     BidderComponent,
-    AdminComponent
+    AdminComponent,
+    CropapprovalComponent
   ],
   imports: [
     BrowserModule,
